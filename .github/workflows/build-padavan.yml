@@ -32,8 +32,8 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        #git clone --depth=1 https://github.com/EmersonHu/rt-n56u.git /opt/rt-n56u
-        git clone --depth=1 https://e.coding.net/hanwckf/rt-n56u/padavan.git /opt/rt-n56u
+        #git clone --depth=1 https://github.com/EmersonHu/rt-n56u.git /opt/rt-n56u #这个源码没有CR660X相关模板和数据#
+        git clone --depth=1 https://e.coding.net/hanwckf/rt-n56u/padavan.git /opt/rt-n56u  #这个是hanwckf大神的源码，支持CR660X#
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
